@@ -6,8 +6,9 @@ Legend: `[x]` done · `[ ]` to do · `[~]` in progress. One branch per phase, on
 - [x] Expo project, TypeScript, React Navigation
 - [x] Upgrade to Expo SDK 57
 - [x] Project docs (`CLAUDE.md`, `TODO.md`)
-- [ ] Android package / iOS bundle id (`com.projectark.customer`)
-- [ ] `eas.json` build profiles + first development build installed on a phone
+- [x] Android package / iOS bundle id (`com.projectark.customer`)
+- [x] `eas.json` build profiles
+- [ ] First development build installed on a phone
 
 ## Phase 1 — Auth & onboarding  ← current
 ### 1a. Firebase migration (you do the console steps)
@@ -15,7 +16,7 @@ Legend: `[x]` done · `[ ]` to do · `[~]` in progress. One branch per phase, on
 - [ ] Firebase console: enable **Phone** sign-in provider
 - [ ] Firebase console: add test phone numbers (e.g. `+1 650-555-1234` / `123456`)
 - [ ] Firebase console: add SHA-1 / SHA-256 of the build key (`npx eas-cli credentials`)
-- [ ] Switch from `firebase` JS SDK to `@react-native-firebase/{app,auth,firestore}` + `expo-dev-client`
+- [x] Switch from `firebase` JS SDK to `@react-native-firebase/{app,auth,firestore}` + `expo-dev-client`
 ### 1b. Phone login
 - [ ] i18n base (English + Arabic, RTL switch)
 - [ ] Shared UI: `theme.ts`, `PrimaryButton`, `TextField`

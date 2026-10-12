@@ -1,7 +1,7 @@
 import 'react-native-gesture-handler';
 import { useEffect, useState } from "react";
 import { NavigationContainer } from "@react-navigation/native"
-import { onAuthStateChanged, User } from "firebase/auth";
+import { onAuthStateChanged, type User } from "@react-native-firebase/auth";
 import { auth } from "./src/firebase";
 
 import AuthStack from "./src/navigation/AuthStack";

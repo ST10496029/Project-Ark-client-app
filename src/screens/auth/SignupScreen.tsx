@@ -7,7 +7,7 @@ import {
   StyleSheet,
   Alert,
 } from "react-native";
-import { createUserWithEmailAndPassword } from "firebase/auth";
+import { createUserWithEmailAndPassword } from "@react-native-firebase/auth";
 import { auth } from "../../firebase";
 
 export default function SignupScreen({ navigation }: any) {
