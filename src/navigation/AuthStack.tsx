@@ -1,17 +1,17 @@
-//this will hold the stack navigator routes for the athentiaction screens login and signup screens 
-import React from "react";
+// Login flow for logged-out users: enter phone number -> enter SMS code.
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
-import LoginScreen from "../screens/auth/LoginScreen";
-import SignupScreen from "../screens/auth/SignupScreen";
+import PhoneScreen from "../screens/auth/PhoneScreen";
+import OtpScreen from "../screens/auth/OtpScreen";
+import type { AuthStackParamList } from "./types";
 
-const Stack = createNativeStackNavigator();
+const Stack = createNativeStackNavigator<AuthStackParamList>();
 
 export default function AuthStack() {
-return(
-    <Stack.Navigator>
-        <Stack.Screen name="Login" component={LoginScreen}/>
-        <Stack.Screen name="Signup" component={SignupScreen}/>
+  return (
+    <Stack.Navigator screenOptions={{ headerShown: false }}>
+      <Stack.Screen name="Phone" component={PhoneScreen} />
+      <Stack.Screen name="Otp" component={OtpScreen} />
     </Stack.Navigator>
-);
+  );
 }

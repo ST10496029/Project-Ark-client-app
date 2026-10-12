@@ -10,23 +10,25 @@ Legend: `[x]` done · `[ ]` to do · `[~]` in progress. One branch per phase, on
 - [x] `eas.json` build profiles
 - [ ] First development build installed on a phone
 
-## Phase 1 — Auth & onboarding  ← current
+## Phase 1 — Auth & onboarding  ← current (code done; console setup + phone test left)
 ### 1a. Firebase migration (you do the console steps)
 - [ ] Firebase console: add Android app `com.projectark.customer`, download `google-services.json` to project root
 - [ ] Firebase console: enable **Phone** sign-in provider
+- [ ] Firebase console: create the Firestore database (if not created yet)
 - [ ] Firebase console: add test phone numbers (e.g. `+1 650-555-1234` / `123456`)
 - [ ] Firebase console: add SHA-1 / SHA-256 of the build key (`npx eas-cli credentials`)
 - [x] Switch from `firebase` JS SDK to `@react-native-firebase/{app,auth,firestore}` + `expo-dev-client`
 ### 1b. Phone login
-- [ ] i18n base (English + Arabic, RTL switch)
-- [ ] Shared UI: `theme.ts`, `PrimaryButton`, `TextField`
-- [ ] `PhoneScreen` — country code + number, validation, loading state, friendly errors
-- [ ] `OtpScreen` — 6-digit code, auto-submit, resend countdown, change number
-- [ ] `OnboardingScreen` — ask name, create `users/{uid}` with `role: "customer"`
-- [ ] `AuthContext` — auth state + profile, reject non-customer accounts
-- [ ] Typed navigation; routing: loading → auth → onboarding → tabs
-- [ ] Profile screen: name, phone, language toggle, logout
-- [ ] Remove old email/password screens
+- [x] i18n base (English + Arabic, RTL switch)
+- [x] Shared UI: `theme.ts`, `PrimaryButton`, `TextField`
+- [x] `PhoneScreen` — country code + number, validation, loading state, friendly errors
+- [x] `OtpScreen` — 6-digit code, auto-submit, resend countdown, change number
+- [x] `OnboardingScreen` — ask name, create `users/{uid}` with `role: "customer"`
+- [x] `AuthContext` — auth state + profile, reject non-customer accounts
+- [x] Typed navigation; routing: loading → auth → onboarding → tabs
+- [x] Profile screen: name, phone, language toggle, logout
+- [ ] Publish `firestore.rules` in Firebase console (Firestore → Rules)
+- [x] Remove old email/password screens
 - [ ] Tested on phone: login, restart stays logged in, logout, wrong code, Arabic layout
 - [ ] Before release: Firebase **Blaze plan** + SMS region policy allows the target country
 
