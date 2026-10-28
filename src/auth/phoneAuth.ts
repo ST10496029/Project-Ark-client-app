@@ -59,6 +59,9 @@ export function authErrorKey(error: unknown): string {
     case "auth/quota-exceeded":
       return "errors.quotaExceeded";
     default:
+      // Shows the real Firebase error in the Metro terminal and on the phone
+      // (yellow box) during development. Release builds only see the generic text.
+      if (__DEV__) console.warn("Unhandled auth error:", code, error);
       return "errors.generic";
   }
 }

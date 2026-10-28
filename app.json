@@ -14,7 +14,10 @@
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.projectark.customer"
+      "bundleIdentifier": "com.projectark.customer",
+      "infoPlist": {
+        "ExpoLocalization_supportsRTL": true
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -47,6 +50,11 @@
           "supportsRTL": true
         }
       ]
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "481773f4-8ba0-424c-b00d-a1f7f4a783cb"
+      }
+    }
   }
 }

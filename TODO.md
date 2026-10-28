@@ -1,5 +1,7 @@
 # Ark Customer App — Roadmap & Progress
 
+> The **driver app has not been started yet**. Firebase settings are decided by this app for now; revisit them when the driver app is built (it should also use phone login).
+
 Legend: `[x]` done · `[ ]` to do · `[~]` in progress. One branch per phase, one commit per finished stage.
 
 ## Phase 0 — Setup
@@ -12,10 +14,10 @@ Legend: `[x]` done · `[ ]` to do · `[~]` in progress. One branch per phase, on
 
 ## Phase 1 — Auth & onboarding  ← current (code done; console setup + phone test left)
 ### 1a. Firebase migration (you do the console steps)
-- [ ] Firebase console: add Android app `com.projectark.customer`, download `google-services.json` to project root
-- [ ] Firebase console: enable **Phone** sign-in provider
+- [x] Firebase console: add Android app `com.projectark.customer`, download `google-services.json` to project root
+- [x] Firebase console: enable **Phone** sign-in provider (Google + Email/Password turned off — driver app doesn't exist yet, so nothing else needs them)
 - [ ] Firebase console: create the Firestore database (if not created yet)
-- [ ] Firebase console: add test phone numbers (e.g. `+1 650-555-1234` / `123456`)
+- [x] Firebase console: add test phone numbers (e.g. `+1 650-555-1234` / `123456`)
 - [ ] Firebase console: add SHA-1 / SHA-256 of the build key (`npx eas-cli credentials`)
 - [x] Switch from `firebase` JS SDK to `@react-native-firebase/{app,auth,firestore}` + `expo-dev-client`
 ### 1b. Phone login
@@ -29,6 +31,7 @@ Legend: `[x]` done · `[ ]` to do · `[~]` in progress. One branch per phase, on
 - [x] Profile screen: name, phone, language toggle, logout
 - [ ] Publish `firestore.rules` in Firebase console (Firestore → Rules)
 - [x] Remove old email/password screens
+- [ ] Debug "Something went wrong" on Send code (dev builds now log the real Firebase error code)
 - [ ] Tested on phone: login, restart stays logged in, logout, wrong code, Arabic layout
 - [ ] Before release: Firebase **Blaze plan** + SMS region policy allows the target country
 

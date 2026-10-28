@@ -7,7 +7,7 @@ Payment is **cash on delivery**.
 
 There are **two separate apps** sharing one Firebase project:
 - **This repo: customer app** — sign in, request water, track the delivery.
-- **Driver app** (separate repo) — go online, accept jobs, navigate, mark delivered.
+- **Driver app** (separate repo, **not started yet**) — go online, accept jobs, navigate, mark delivered.
 
 Progress and the build roadmap live in [TODO.md](TODO.md). Update it whenever a task is finished.
 
