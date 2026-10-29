@@ -1,0 +1,57 @@
+{
+  "common": {
+    "appName": "Ark",
+    "tagline": "Clean water delivered to your home",
+    "errorTitle": "Something went wrong",
+    "ok": "OK"
+  },
+  "language": {
+    "switchTo": "عربي"
+  },
+  "phone": {
+    "title": "Welcome",
+    "subtitle": "Enter your phone number. We will send you a code by SMS.",
+    "codeLabel": "Code",
+    "numberLabel": "Phone number",
+    "numberPlaceholder": "912 345 678",
+    "send": "Send code"
+  },
+  "otp": {
+    "title": "Enter the code",
+    "subtitle": "We sent a {{length}}-digit code to {{phone}}",
+    "verify": "Verify",
+    "resend": "Send a new code",
+    "resendIn": "Send a new code in {{seconds}}s",
+    "changeNumber": "Change phone number",
+    "resent": "A new code was sent"
+  },
+  "onboarding": {
+    "title": "What is your name?",
+    "subtitle": "Drivers will use your name when they deliver water.",
+    "nameLabel": "Full name",
+    "namePlaceholder": "Your name",
+    "continue": "Continue"
+  },
+  "home": {
+    "title": "Home",
+    "placeholder": "Water requests are coming soon."
+  },
+  "profile": {
+    "title": "Profile",
+    "name": "Name",
+    "phone": "Phone",
+    "language": "Language",
+    "logout": "Log out"
+  },
+  "errors": {
+    "invalidPhone": "This phone number is not valid. Check it and try again.",
+    "invalidCode": "The code is wrong. Check the SMS and try again.",
+    "codeExpired": "The code has expired. Ask for a new code.",
+    "tooManyRequests": "Too many attempts. Please wait a while and try again.",
+    "network": "No internet connection. Check your data or Wi-Fi and try again.",
+    "quotaExceeded": "We can't send SMS right now. Please try again later.",
+    "nameRequired": "Please enter your name.",
+    "driverAccount": "This phone number is registered as a driver. Please use the Ark Driver app.",
+    "generic": "Something went wrong. Please try again."
+  }
+}
